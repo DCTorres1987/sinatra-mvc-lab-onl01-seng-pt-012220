@@ -32,6 +32,7 @@ class PigLatinizer
             @new_sentence << s[2..-1] + s[0..1] + 'ay'
             else Vowels.include?(s[3]).downcase)
             @new_sentence << s[3..-1] + s[0..2] + 'ay'
+            
             end 
         end 
         @new_sentence.join(" ")
